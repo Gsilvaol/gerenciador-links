@@ -7,7 +7,7 @@ type Category = {
     icon: keyof typeof MaterialIcons.glyphMap;
 }
 
-export const Categories: Category[] = [
+export const categories: Category[] = [
     { id: "1", name: "Curso", icon: "code" },
     { id: "2", name: "Projeto", icon: "folder" },
     { id: "3", name: "Site", icon: "language" },
