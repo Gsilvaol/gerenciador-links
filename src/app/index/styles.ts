@@ -75,5 +75,14 @@ export const styles = StyleSheet.create({
     color: colors.gray[400],
   },
 
+  modalFooter: {
+    flexDirection: "row",
+    marginTop: 32,
+    width: "100%",
+    justifyContent: "space-between",
+    borderTopColor: colors.gray[600],
+    paddingVertical: 14,
+  }
+
 
 });

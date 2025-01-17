@@ -5,7 +5,7 @@ import { styles } from "./styles";
 import { colors } from "@/styles/colors";
 import { Categories } from "@/components/categories";
 import { Link } from "@/components/link";
-
+import { Option } from "@/components/option";
 
 export default function Index() {
     return (
@@ -48,6 +48,11 @@ export default function Index() {
                         <Text style={styles.modalLinkName}>Rocketseat</Text>
 
                         <Text style={styles.modalUrl}>https://www.rocketseat.com.br/</Text>
+
+                        <View style={styles.modalFooter}>
+                            <Option name="Excluir" icon="delete" variant="secondary" />
+                            <Option name="Abrir" icon="language" />
+                        </View>
                     </View>
 
                 </View>
