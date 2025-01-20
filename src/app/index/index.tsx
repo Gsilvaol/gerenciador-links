@@ -23,7 +23,7 @@ export default function Index() {
             <FlatList
                 data={["1", "2", "3", "4", "5"]}
                 keyExtractor={item => item}
-                renderItem={() => (
+                renderItem={({ item }) => (
                     <Link
                         name="Rocketseat"
                         url="https://www.rocketseat.com.br/"
@@ -51,7 +51,7 @@ export default function Index() {
 
                         <View style={styles.modalFooter}>
                             <Option name="Excluir" icon="delete" variant="secondary" />
-                            <Option name="Abrir" icon="language" />
+                            <Option name="Abrir" icon="language"  />
                         </View>
                     </View>
 

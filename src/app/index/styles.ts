@@ -33,7 +33,7 @@ export const styles = StyleSheet.create({
 
   linksContent: {
     gap: 20,
-    padding: 24,
+    padding: 20,
     paddingBottom: 100,
   },
 
@@ -77,12 +77,13 @@ export const styles = StyleSheet.create({
 
   modalFooter: {
     flexDirection: "row",
-    marginTop: 32,
+    marginTop: 30,
     width: "100%",
     justifyContent: "space-between",
+    borderTopWidth: 1,
     borderTopColor: colors.gray[600],
-    paddingVertical: 14,
-  }
-
-
+    paddingTop: 10,
+    padding: 2,
+    
+  },
 });
