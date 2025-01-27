@@ -6,6 +6,7 @@ import {
   Modal,
   Text,
   Alert,
+  Linking,
 } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
 
@@ -54,10 +55,20 @@ export default function Index() {
   }
 
   function handleRemove() {
-      Alert.alert("Excluir", "Deseja excluir este link?", [
-        { style: "cancel", text: "Não" },
-        { text: "Sim", onPress: linkRemove },
-      ]);
+    Alert.alert("Excluir", "Deseja excluir este link?", [
+      { style: "cancel", text: "Não" },
+      { text: "Sim", onPress: linkRemove },
+    ]);
+  }
+
+  async function handleOpen() {
+    try {
+      await Linking.openURL(link.url);
+      setShowModal(false);
+    } catch (error) {
+      Alert.alert("Link", "Não foi possivel abrir o link");
+      console.log(error);
+    }
   }
 
   useFocusEffect(
@@ -112,8 +123,13 @@ export default function Index() {
             <Text style={styles.modalUrl}>{link.url}</Text>
 
             <View style={styles.modalFooter}>
-              <Option name="Excluir" icon="delete" variant="secondary" onPress={handleRemove} />
-              <Option name="Abrir" icon="language" />
+              <Option
+                name="Excluir"
+                icon="delete"
+                variant="secondary"
+                onPress={handleRemove}
+              />
+              <Option name="Abrir" icon="language" onPress={handleOpen} />
             </View>
           </View>
         </View>
