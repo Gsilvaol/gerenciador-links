@@ -3,25 +3,20 @@
 
 
 
-
-
-
-<br>
-
 <p align="center">
   <img alt=""  
   src=".github/Home.png"   
-  width="50%">
+  width="40%">
 </p>
 <p align="center">
   <img alt=""  
   src=".github/New.png"   
-  width="50%">
+  width="40%">
 </p>
 <p align="center">
   <img alt=""  
   src=".github/Open.png"   
-  width="50%">
+  width="40%">
 </p>
 
 
