@@ -11,17 +11,17 @@
 <p align="center">
   <img alt=""  
   src=".github/Home.png"   
-  width="100%">
+  width="50%">
 </p>
 <p align="center">
   <img alt=""  
   src=".github/New.png"   
-  width="100%">
+  width="50%">
 </p>
 <p align="center">
   <img alt=""  
   src=".github/Open.png"   
-  width="100%">
+  width="50%">
 </p>
 
 
