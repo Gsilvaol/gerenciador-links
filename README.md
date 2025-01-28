@@ -30,7 +30,8 @@
 Esse projeto está sendo desenvolvido com as seguintes tecnologias:
 
 
-- Typescript
+- JavaScript
+- TypeScript
 - Reactnative
 - React
 - Expo
